@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --brand-light: #F6F4F4;
+    --brand-light2: #CCC2C2;
+    --brand-color: #9D8A8A;
+    --brand-dark: #6A5858;
+  }
+
+body{
+background-color: white;
+padding: 0;
+margin: 0;
+font-family: 'Inter', sans-serif;
+}
+
+header{
+    min-height: 100vh;
+    display: block;
+    background-image: url("./assets/banner\ \(3\)-mobile.png");
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+    width: 100%;
+    justify-content: center;
+    justify-items: center;
+    }
+
+.sidebar-container{
+width: 100%;
+background-color: var(--brand-color);
+height: 30px;
+display: flex;
+position: fixed;
+top: 0;
+left: 0;
+z-index: 2;
+}
+
+.sidebar-text{
+    color: var(--brand-light);
+    font-size: 10px;
+    text-transform: uppercase;
+    margin: 0 auto;
+    padding: 8px 0;
+}
+
+nav {
+   width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    max-height: 74px;
+    position: fixed;
+    top: 20px;
+    background-color: rgba(56, 46, 46, 50%);
+}
+
+nav a img {
+width: 44px;
+height: 44px;
+padding: 0 10px;
+}
+
+.content-header{
+    padding: 0 15px;
+    position: relative;
+    top: 256px;
+}
+
+h1{
+    font-size: 40px;
+    color: var(--brand-light);
+    text-transform: uppercase;
+
+}
+
+h2{
+    font-size: 2rem;
+    font-weight: 800;
+color: var(--brand-dark);
+text-transform: uppercase;
+text-align: center;
+margin: 0;
+margin-bottom: 24px;
+}
+
+h3{
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--brand-light2);
+    text-transform: uppercase;
+}
+
+h4{
+    font-size: 1rem;
+    font-weight: 900;
+    color: var(--brand-dark);
+    text-align: center;
+}
+
+h5 {
+    font-size: 12px;
+    color: var(--brand-color);
+    text-transform: uppercase;
+    text-align: center;
+    /* padding-top: 10px; */
+    font-weight: 300;
+    margin: 24px 0;
+}
+p {
+    font-size: 15px;
+    font-weight: 300;
+    color: var(--brand-dark);
+    text-align: center;
+    margin: 24px 0;
+    padding: 0 15px;
+}
+
+.p-destaque {
+    font-size: 15px;
+    font-weight: 300;
+    color: var(--brand-dark);
+    text-transform: uppercase;
+    text-align: center;
+    margin: 80px 0;
+    padding: 0 15px;
+}
+
+button{
+    border: none;
+    border-radius: 50px;
+    color: var(--brand-light);
+    background-color: var(--brand-color);
+    padding: 8px 24px;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom: 16px;
+    cursor: pointer;
+}
+
+
+.card-colecoes {
+padding: 0 15px;
+}
+
+
+
+.card-colecoes img{
+    border-radius: 8px;
+    width: 100%;
+    }
+
+
+.card-colecoes button{
+width: 100%;
+cursor: pointer;
+
+}
+
+.pagination-dot {
+list-style: none;
+display: flex;
+padding: 0;
+margin: 16px auto 80px auto;
+justify-content: center;
+}
+
+.pagination-dot li {
+    width: 8px;
+    height: 8px;
+    background-color: var(--brand-dark);
+    border: none;
+    border-radius: 50px;
+    margin: 0 2px;
+}
+
+.pagination-dot .active{
+    width: 32px;
+}
+
+#quem-somos img{
+    width: 100%;
+    margin-bottom: 80px;
+}
+
+.container-equipe{
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 10px;
+}
+
+.container-equipe p, 
+.container-equipe h5, 
+.container-equipe h4{
+    text-align: left;
+    padding: 0;
+    margin: 8px 0;
+}
+
+.container-equipe h4{
+    color: var(--brand-light2);
+    font-size: 12px;
+}
+
+.container-equipe h5{
+    font-weight: 800;
+    color: var(--brand-dark);
+}
+.social-media{
+    display: flex;
+    margin-bottom: 16px;
+}
+.social-media a{
+    width: 20px;
+    margin: 6px 16px 0 0;
+}
+
+.social-media a img{
+    cursor: pointer;
+    width: 100%;
+}
+
+footer {
+    height: 240px;
+    padding: 48px 0;
+background-color: var(--brand-light);
+margin: 0 auto;
+}
+
+footer a{
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+    margin-top: 32px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 800;
+    color: var(--brand-dark);
+    justify-content: center;
+}
+
+footer .social-media{
+    justify-content: center;
+}
+footer .social-media a{
+    margin: 32px 8px 0 8px;
+
+
+}
+.copyright p{
+    color: var(--brand-color);
+    font-size: 8px;
+    background-color: white;
+    padding: 8px 0;
+    margin: 0;
+}
