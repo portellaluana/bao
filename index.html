@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
     <link rel="icon" type="image/x-icon" href="./assets/logo-bao-dark.svg">
     <title>cerâmicas artesanais</title>
@@ -13,63 +13,122 @@
 
 <body>
     <header>
-        <div class="sidebar-container">
-            <p class="sidebar-text"> <strong>frete grátis</strong> nas compras acima de R$ 200</p>
-        </div>
+        <!-- <div class="sidebar-container fixed-top col">
+            <p class="sidebar-text col"> <strong>frete grátis</strong> nas compras acima de R$ 200</p>
+        </div> -->
         <nav>
-            <a><img src="./assets/icones/menu.png" alt=""></a>
-            <img src="./assets/logo-bao-light.svg" alt="">
-            <a><img src="./assets/icones/carrinho.png" alt=""></a>
+            <div class="nav-container">
+                <a class="menu-item"><img src="./assets/icones/menu.png" alt=""></a>
+                <img src="./assets/logo-bao-light.svg" alt="logo-bao">
+                <ul class="menu-desktop">
+                    <li><a href="#colecoes">Coleções</a></li>
+                    <li><a href="#quem-somos">quem somos</a></li>
+                    <li><a href="#nossa-equipe">Nossa equipe</a></li>
+                </ul>
+                <a><img src="./assets/icones/carrinho.png" alt=""></a>
+            </div>
         </nav>
         <div class="content-header">
             <h3>exclusiva</h3>
             <h1>cerâmica<br>feita<br>à mão</h1>
-            <button>comprar</button>
+            <button>quero ver</button>
         </div>
     </header>
+
     <p class="p-destaque">peças únicas, de característica artesanal produzidas em pequena escala.</p>
+
     <section id="colecoes" class="card-colecoes">
-        <h2>nossas<br>coleções</h2>
-        <img src="./assets/colecoes-mobile.png" alt="colecoes">
-        <h5>coleção os diferentes se completam</h5>
-        <button>ver coleção</button>
-        <div>
+        <h2>nossas coleções</h2>
+        <div class="card-colecoes-itens">
+            <div class="card-colecoes-item">
+                <img src="./assets/products/product (1).png" alt="colecoes">
+                <h5>ondinhas do mar</h5>
+                <button>ver coleção</button>
+            </div>
+            <div class="card-colecoes-item">
+                <img src="./assets/products/product (2).png" alt="colecoes">
+                <h5>textura asiática</h5>
+                <button>ver coleção</button>
+            </div>
+            <div class="card-colecoes-item">
+                <img src="./assets/products/product (3).png" alt="colecoes">
+                <h5>verde mar</h5>
+                <button>ver coleção</button>
+            </div>
+            <div class="card-colecoes-item">
+                <img src="./assets/products/product (4).png" alt="colecoes">
+                <h5>louças pretas</h5>
+                <button>ver coleção</button>
+            </div>
+            <div class="card-colecoes-item">
+                <img src="./assets/products/product (5).png" alt="colecoes">
+                <h5>louças pretas</h5>
+                <button>ver coleção</button>
+            </div>
+            <div class="card-colecoes-item">
+                <img src="./assets/products/product (6).png" alt="colecoes">
+                <h5>louças pretas</h5>
+                <button>ver coleção</button>
+            </div>
+        </div>
+        <!-- <div>
             <ul class="pagination-dot">
                 <li class="active"><a></a></li>
                 <li><a></a></li>
-                <li><a></a></li>
-                <li><a></a></li>
             </ul>
-        </div>
+        </div> -->
     </section>
-    <section id="quem-somos">
-        <h2>quem<br>somos</h2>
+
+    <section id="quem-somos" class="quem-somos">
+        <h2>quem somos</h2>
         <p>Cerâmica, originária da palavra grega "kéramos", que significa "terra queimada", é um dos materiais mais antigos criados pelas mãos humanas, e sua história está intimamente entrelaçada com a evolução das civilizações. E por aqui, esses saberes milenares são honrados. Cada peça é esculpida em barro, ganha tons coloridos através do fogo, e é orgulhosamente brasileira.</p>
-        <img src="./assets/banner (2) mobile.png" alt="">
+        <img src="./assets/quem-somos-.png" alt="">
     </section>
+
     <section class="mais-queridos card-colecoes">
-        <h2>os mais<br>queridos</h2>
-        <img src="./assets/product-10 (4)-mobile.png" alt="colecoes">
-        <h5>prato de formato único</h5>
-        <h4>R$ 45</h4>
-        <button>adicionar a sacola</button>
-        <div>
+        <h2>os mais vendidos</h2>
+        <div class="card-mais-vendidos-itens">
+            <div class="card-mais-vendidos-item">
+                <img src="./assets/products/product (5).png" alt="mais-vendidos">
+                <h5>textura asiática</h5>
+                <h4>R$ 45</h4>
+                <button>adicionar a sacola</button>
+
+            </div>
+            <div class="card-mais-vendidos-item">
+                <img src="./assets/products/product (4).png" alt="mais-vendidos">
+                <h5>verde mar</h5>
+                <h4>R$ 45</h4>
+                <button>adicionar a sacola</button>
+
+            </div>
+            <div class="card-mais-vendidos-item">
+                <img src="./assets/products/product (3).png" alt="mais-vendidos">
+                <h5>louças pretas</h5>
+                <h4>R$ 45</h4>
+                <button>adicionar a sacola</button>
+            </div>
+        </div>
+
+
+        <!-- <div>
             <ul class="pagination-dot">
                 <li class="active"><a></a></li>
                 <li><a></a></li>
                 <li><a></a></li>
                 <li><a></a></li>
             </ul>
-        </div>
+        </div> -->
     </section>
-    <section id="nossa-equipa" class="card-colecoes">
-        <h2>nossa<br>equipa</h2>
+
+    <section id="nossa-equipe">
+        <h2>nossa equipe</h2>
         <p>Nossa equipe é composta por mulheres talentosas e comprometidas, que se unem para alcançar objetivos comuns. Somos um grupo diversificado de profissionais apaixonados, cada um trazendo habilidades únicas e experiências valiosas para o trabalho em equipe.</p>
         <div class="container-equipe">
-            <div>
-                <img src="./assets/equipe/equipa-bao (1).png" alt="equipa">
+            <div class="card-equipe-item">
+                <img src="./assets/equipe/equipe-bao (1).png" alt="equipe">
                 <h5>miriam sousa</h5>
-                <h4>Liderança</h4>
+                <h4>Lógica</h4>
                 <p>Doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo </p>
                 <div class="social-media">
                     <a><img src="./assets/icones/facebook.png" alt=""></a>
@@ -77,11 +136,33 @@
                     <a><img src="./assets/icones/instagram.png" alt=""></a>
                 </div>
             </div>
-            <div>
-                <img src="./assets/equipe/equipa-bao (4).png" alt="equipa">
+            <div class="card-equipe-item">
+                <img src="./assets/equipe/equipe-bao (4).png" alt="equipe">
+                <h5>Gabriela Gomes</h5>
+                <h4>Números</h4>
+                <p>Ut perspiciatis unde iste natus voluptatem accusantium error</p>
+                <div class="social-media">
+                    <a><img src="./assets/icones/facebook.png" alt=""></a>
+                    <a><img src="./assets/icones/twitter.png" alt=""></a>
+                    <a><img src="./assets/icones/instagram.png" alt=""></a>
+                </div>
+            </div>
+            <div class="card-equipe-item">
+                <img src="./assets/equipe/equipe-bao (3).png" alt="equipa">
+                <h5>Joana Almeida</h5>
+                <h4>Bem estar</h4>
+                <p>Sed ut perspiciatisiste natus error sit accusantium unde</p>
+                <div class="social-media">
+                    <a><img src="./assets/icones/facebook.png" alt=""></a>
+                    <a><img src="./assets/icones/twitter.png" alt=""></a>
+                    <a><img src="./assets/icones/instagram.png" alt=""></a>
+                </div>
+            </div>
+            <div class="card-equipe-item">
+                <img src="./assets/equipe/equipe-bao (2).png" alt="equipa">
                 <h5>Ana silva</h5>
-                <h4>Gestão</h4>
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium </p>
+                <h4>Calmaria</h4>
+                <p>Perspiciatis unde omnis iste natus error sit voluptatem accusantium </p>
                 <div class="social-media">
                     <a><img src="./assets/icones/facebook.png" alt=""></a>
                     <a><img src="./assets/icones/twitter.png" alt=""></a>
@@ -89,25 +170,29 @@
                 </div>
             </div>
         </div>
-        <div>
-            <ul class="pagination-dot">
-                <li class="active"><a></a></li>
-                <li><a></a></li>
-            </ul>
-        </div>
     </section>
+
     <footer>
-        <a href="#"><img src="./assets/logo-bao-dark.svg" alt="logo-bao-dark" alt=""></a>
-        <a href="#colecoes">Coleções</a>
-        <a href="#quem-somos">Quem somos</a>
-        <a href="#nossa-equipe">Nossa equipa</a>
-        <div class="social-media">
-            <a><img src="./assets/icones/facebook.png" alt=""></a>
-            <a><img src="./assets/icones/twitter.png" alt=""></a>
-            <a><img src="./assets/icones/instagram.png" alt=""></a>
+        <div class="container-footer">
+            <div class="header-menu-footer">
+                <a href="#"><img src="./assets/logo-bao-dark.svg" alt="logo-bao-dark" alt=""></a>
+                <p>bao comércio de cerâmicas ltda<br>servidão anita garibaldi, 202<br> <strong>+55 48 0002548</strong></p>
+            </div>
+            <div class="main-menu-footer">
+                <a href="#colecoes">Coleções</a>
+                <a href="#quem-somos">Quem somos</a>
+                <a href="#nossa-equipe">Nossa equipa</a>
+            </div>
+            <div class="social-media">
+                <a><img src="./assets/icones/facebook.png" alt=""></a>
+                <a><img src="./assets/icones/twitter.png" alt=""></a>
+                <a><img src="./assets/icones/instagram.png" alt=""></a>
+            </div>
         </div>
     </footer>
+
     <p class="copyright" id="copyright">© 2023 bao cerâmicas Inc.</p>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
 
