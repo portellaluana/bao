@@ -60,7 +60,19 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 0 0 20px;
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .nav-container {
+    margin: 0 0 0 20px;
+  }
+}
+
+@media (min-width: 1080px) {
+  .nav-container {
+    margin: 0;
+  }
 }
 
 nav ul li a {
@@ -310,14 +322,17 @@ button:hover {
   width: 32px;
 }
 
-#quem-somos img {
-  width: 100%;
-  border-radius: 8px;
-}
 .quem-somos {
   max-width: 1080px;
   width: 100%;
   margin: 0 auto;
+}
+.carousel-control-next-icon {
+  background-image: url(./assets/icones/arrow.png);
+}
+.carousel-control-prev-icon {
+  background-image: url(./assets/icones/arrow.png);
+  rotate: 180deg;
 }
 
 .container-equipe {
@@ -395,9 +410,15 @@ footer {
     justify-content: space-between;
     max-width: 1080px;
     width: 100%;
+    margin: 0 20px;
+  }
+}
+@media (min-width: 1080px) {
+  .container-footer {
     margin: 0 auto;
   }
 }
+
 .header-menu-footer p {
   margin: 16px 0;
   width: 100%;
